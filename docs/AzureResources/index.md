@@ -8,9 +8,6 @@ nav_order: 2
 
 This documentation provides step-by-step instructions for creating an Azure OpenAI resource and an Azure SQL Database.
 
-## Table of Contents
-1. [Azure OpenAI Resource](#azure-openai-resource)
-2. [Azure SQL Database](#azure-sql-database)
 
 ## Azure OpenAI Resource
 

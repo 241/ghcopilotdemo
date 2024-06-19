@@ -11,17 +11,16 @@ nav_order: 3
 Before you begin, ensure you have the following installed:
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [.NET SDK](https://dotnet.microsoft.com/download)
-- [Node.js](https://nodejs.org/) (if applicable)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download)
 - An active Azure subscription with Azure OpenAI and Azure SQL Database resources created
 
 ## Steps to Build the Project
 
 1. **Clone the Repository:**
 
-    Open your terminal and clone the repository using the following command:
+Open your terminal and clone the repository using the following command:
 ```
-git clone https://github.com/yourusername/sql-chatter.git
+git clone https://github.com/241/ghcopilotdemo.git
 ```
 
 
@@ -30,35 +29,40 @@ cd sql-chatter
 
 
 2. **Open the Project in Visual Studio Code:**
-
-    Launch Visual Studio Code and open the project directory:
+Launch Visual Studio Code and open the project directory:
     
     
-3. **Install the Required Dependencies:**
-
-    If your project has a `package.json` file, install the Node.js dependencies:
     
-        Restore the .NET dependencies:
-    
-    
-4. **Update `appsettings.json`:**
+3. **Update `appsettings.json`:**
 
     Open the `appsettings.json` file and update it with your Azure OpenAI and Azure SQL Database credentials:
     
 ```json
 {
-  "AzureOpenAI": {
-    "Endpoint": "https://your-openai-endpoint",
-    "ApiKey": "your-openai-api-key"
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
   },
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=tcp:your-sql-server.database.windows.net,1433;Initial Catalog=your-database;Persist Security Info=False;User ID=your-username;Password=your-password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  "AllowedHosts": "*",
+  "AzureOpenAI": {
+    "Endpoint": "https://###.openai.azure.com/",
+    "Key": "###",
+    "DeploymentName": "###"
+  },
+  "SQL": {
+    "Server": "###.database.windows.net",
+    "Database": "###",
+    "User": "###",
+    "Password": "###"
   }
 }
+
 ```
 
 
-6. **Access the Application:**
+4. **Access the Application:**
 
     Open your browser and navigate to `http://localhost:5000` (or the appropriate URL) to access the application.
 
