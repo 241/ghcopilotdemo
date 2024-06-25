@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using OpenAIWebApp.Models;
 using System.Text.Json;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace OpenAIWebApp.Controllers
 {
@@ -229,7 +230,7 @@ namespace OpenAIWebApp.Controllers
         {
 
             var dataService = new DataService(_configuration);
-            query = query.Trim().ToUpper();
+            query = query.Trim().ToUpper(CultureInfo.InvariantCulture);
             if (query.StartsWith("SELECT"))
             {
                 model._indexData.RowData = dataService.GetDataTable(query);
