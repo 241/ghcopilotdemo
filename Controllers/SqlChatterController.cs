@@ -16,6 +16,10 @@ namespace OpenAIWebApp.Controllers
         private readonly IConfiguration _configuration;
         private readonly OpenAIClient _openAIClient;
 
+        // Static list to store question history
+        private static List<string> _questionHistory = new List<string>();
+
+
         public SqlChatterController(ILogger<HomeController> logger,
                     IConfiguration configuration,
                     OpenAIClient openAIClient)
@@ -108,8 +112,7 @@ namespace OpenAIWebApp.Controllers
             if (!(query.TrimStart().ToUpper().StartsWith("SELECT") ||
                 query.TrimStart().ToUpper().StartsWith("UPDATE") ||
                 query.TrimStart().ToUpper().StartsWith("DELETE") ||
-                query.TrimStart().ToUpper().StartsWith("INSERT") ||
-                query.TrimStart().ToUpper().StartsWith("CREATE") // saçma mı olur?
+                query.TrimStart().ToUpper().StartsWith("INSERT")
                 ))
             {
                 return false;
@@ -153,9 +156,17 @@ namespace OpenAIWebApp.Controllers
                 return _model;
             }
 
+            // Add the question to the history
+            _questionHistory.Add(_indexData.Question);
+            if (_questionHistory.Count > 5)
+            {
+                _questionHistory.RemoveAt(0);
+            }
+
+            _model._indexData.QuestionHistory = _questionHistory.AsEnumerable().Reverse().ToList();
+
             try
             {
-                //insert stopwatch here
                 Stopwatch sw = new Stopwatch();
                 sw.Start();
                 string _completion = await GetCompletionFromOpenAI(_indexData.Question);
@@ -189,7 +200,7 @@ namespace OpenAIWebApp.Controllers
                     sw2.Start();
                     ExecuteSqlQuery(_model, res.query);
                     sw2.Stop();
-                    _model._indexData.TimeElapsed = _model._indexData.TimeElapsed+ "\n Time taken to execute query: " + sw2.ElapsedMilliseconds + " ms";
+                    _model._indexData.TimeElapsed = _model._indexData.TimeElapsed + "\n Time taken to execute query: " + sw2.ElapsedMilliseconds + " ms";
                 }
             }
             catch (Exception ex)

@@ -59,13 +59,14 @@ namespace OpenAIWebApp.Models
         }
     }
 
-    public class IndexData : Controller
+    public class IndexData
     {
+        public List<string> QuestionHistory { get; set; } = new List<string>();
         public string Question { get; set; }
         public string Summary { get; set; }
         public string Query { get; set; }
-        public string Error { get; set; }
         public string TimeElapsed { get; set; }
+        public string Error { get; set; }
         public List<List<string>> RowData { get; set; }
     }
 
