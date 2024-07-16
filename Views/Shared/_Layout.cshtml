@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - OpenAIWebApp</title>
+    <title>@ViewData["Title"] - Open AI Web App</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OpenAIWebApp.styles.css" asp-append-version="true" />
@@ -22,16 +22,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="SqlChatter" asp-action="Index">
+                                <img src="~/icon/SQL.png" alt="SQL Icon" style="height: 20px; width: 20px; margin-right: 5px;">
+                                SQL Chatter
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="SqlChatter" asp-action="Index">SqlChatter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="LawChatter" asp-action="Index">LawChatter</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="LawChatter" asp-action="Index">
+                                <img src="~/icon/LAW.png" alt="Law Icon" style="height: 20px; width: 20px; margin-right: 5px;">
+                                LAW Chatter
+                            </a>
                         </li>
                     </ul>
                 </div>
