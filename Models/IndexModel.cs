@@ -20,6 +20,7 @@ namespace OpenAIWebApp.Models
             _indexData.Question = "";
             _indexData.Summary = "";
             _indexData.Query = "";
+            _indexData.IsQuery = "";
             _indexData.Error = "";
             _indexData.TimeElapsed = "";
             _indexData.RowData = new List<List<string>>();
@@ -30,6 +31,7 @@ namespace OpenAIWebApp.Models
             _indexData.Question = data.Question;
             _indexData.Summary = data.Summary;
             _indexData.Query = data.Query;
+            _indexData.IsQuery = data.IsQuery;
             _indexData.Error = data.Error;
             _indexData.TimeElapsed = data.TimeElapsed;
             _indexData.RowData = data.RowData;
@@ -45,6 +47,7 @@ namespace OpenAIWebApp.Models
         public IndexModel(string question,
             string summary,
             string query,
+            string isQuery,
             string error,
             string timeElapsed,
             List<List<string>> data
@@ -54,6 +57,7 @@ namespace OpenAIWebApp.Models
             _indexData.Summary = summary;
             _indexData.TimeElapsed = timeElapsed;
             _indexData.Query = query;
+            _indexData.IsQuery = isQuery;
             _indexData.Error = error;
             _indexData.RowData = data;
         }
@@ -65,6 +69,7 @@ namespace OpenAIWebApp.Models
         public string Question { get; set; }
         public string Summary { get; set; }
         public string Query { get; set; }
+        public string IsQuery { get; set; }
         public string TimeElapsed { get; set; }
         public string Error { get; set; }
         public List<List<string>> RowData { get; set; }
@@ -74,5 +79,6 @@ namespace OpenAIWebApp.Models
     {
         public string summary { get; set; } = string.Empty;
         public string query { get; set; } = string.Empty;
+        public string isQuery { get; set; } = string.Empty;
     }
 }

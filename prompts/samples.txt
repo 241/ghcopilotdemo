@@ -1,0 +1,50 @@
+﻿I want to access the tables in the Log Analytics Workspace I hold on 
+Azure through a .NET Core console application. 
+What kind of configuration do I need to do on the Azure portal for this?
+
+###
+
+Add the following NuGet packages to your .NET Core console application:
+
+- Microsoft.Azure.Kusto.Data
+  C:\Users\barisu\.nuget\packages\microsoft.azure.kusto.data\12.2.3\readme.txt
+
+###
+
+#file:infra.kql içerisindeki tablo tanımlarını şu formatta verebilir misin? TabloAdı(kolon1,kolon2,...)
+
+###
+
+i would like to do performance analysis for an AKS resource using LAW tables 
+which structures are given in #file:LawTables.kql file. 
+can you provide me a few good performance analysis KQL script using the reference file.
+
+
+Perf
+| where ObjectName == "K8SNode" and CounterName in ("cpuUsageNanoCores", "memoryRssBytes")
+| summarize AvgCPUUsageNanoCores=avgif(CounterValue, CounterName == "cpuUsageNanoCores"), 
+            AvgMemoryRssBytes=avgif(CounterValue, CounterName == "memoryRssBytes") by Computer, bin(TimeGenerated, 1h)
+| order by TimeGenerated desc
+
+---
+
+KubePodInventory
+| summarize AvgRestartCount=avg(ContainerRestartCount), MaxRestartCount=max(ContainerRestartCount) by PodUid, Name
+| where AvgRestartCount > 0
+| order by AvgRestartCount desc
+
+---
+
+Perf
+| where ObjectName == "K8SContainer" and CounterName in ("cpuUsageNanoCores", "memoryWorkingSetBytes")
+| summarize AvgCPUUsageNanoCores=avgif(CounterValue, CounterName == "cpuUsageNanoCores"), 
+            AvgMemoryWorkingSetBytes=avgif(CounterValue, CounterName == "memoryWorkingSetBytes") by ContainerID, bin(TimeGenerated, 1h)
+| order by TimeGenerated desc
+
+---
+
+KubeEvents
+| where TimeGenerated > ago(7d)
+| summarize EventCount=count() by Reason, bin(TimeGenerated, 1h)
+| order by EventCount desc
+

@@ -2,6 +2,7 @@ using Azure.AI.OpenAI;
 using Azure;
 using Microsoft.Extensions.Options;
 using static OpenAIWebApp.Controllers.SqlChatterController;
+using static OpenAIWebApp.Controllers.LawChatterController;
 
 var builder = WebApplication.CreateBuilder(args);
 
