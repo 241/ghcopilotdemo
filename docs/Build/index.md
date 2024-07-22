@@ -12,11 +12,13 @@ This study covers the setup of the database and OpenAI service, the architecture
 
 ## ✍️ Prerequisites
 
-Before you begin, ensure you have the following installed:
+❗Before beginning this exercise, it is essential to have an active Azure subscription with Azure OpenAI. To gain access to the Azure OpenAI service, you can request access through the following link: [Request Access to Azure OpenAI Service](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUNTZBNzRKNlVQSFhZMU9aV09EVzYxWFdORCQlQCN0PWcu).
+
+For the development tools, ensure you have the following installed:
 
 * [Visual Studio Code](https://code.visualstudio.com/) or [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 * [.NET 8 SDK](https://dotnet.microsoft.com/download)
-* An active Azure subscription with Azure OpenAI and Azure SQL Database resources created
+
 
 ## 🗒️ Guide
 You can follow the step by step instructions to complete this excercise:
