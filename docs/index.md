@@ -60,7 +60,7 @@ Here is an example:
 
   ![CreatePrompt](./CopilotImages/CreatePrompt.png)
 
-   And the answer from Copilot:
+   The answer from Copilot:
 
   ![AnswertoCreatePrompt](./CopilotImages/AnswerToCreatePrompt.png)
 
