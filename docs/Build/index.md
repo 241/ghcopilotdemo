@@ -1,7 +1,7 @@
 ---
 title: SQL Chatter Project (Azure OpenAI Version)
 layout: home
-nav_order: 3
+nav_order: 2
 ---
 
 # SQL Chatter Project (Azure OpenAI Version)
