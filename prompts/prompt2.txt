@@ -1,0 +1,27 @@
+Using the schema of the SalesLT table below, generate SQL queries to perform various tasks. Provide the result in the format of "Summary" and "SQL Query."
+
+SalesLT Table Schema:
+
+- Address (AddressID, AddressLine1, AddressLine2, City, StateProvince, CountryRegion, PostalCode, rowguid, ModifiedDate)
+- Customer (CustomerID, NameStyle, Title, FirstName, MiddleName, LastName, Suffix, CompanyName, SalesPerson, EmailAddress, Phone, PasswordHash, PasswordSalt, rowguid, ModifiedDate)
+- CustomerAddress (CustomerID, AddressID, AddressType, rowguid, ModifiedDate)
+- Product (ProductID, Name, ProductNumber, Color, StandardCost, ListPrice, Size, Weight, ProductCategoryID, ProductModelID, SellStartDate, SellEndDate, DiscontinuedDate, ThumbNailPhoto, ThumbnailPhotoFileName, rowguid, ModifiedDate)
+- ProductCategory (ProductCategoryID, ParentProductCategoryID, Name, rowguid, ModifiedDate)
+- ProductDescription (ProductDescriptionID, Description, rowguid, ModifiedDate)
+- ProductModel (ProductModelID, Name, CatalogDescription, rowguid, ModifiedDate)
+- ProductModelProductDescription (ProductModelID, ProductDescriptionID, Culture, rowguid, ModifiedDate)
+- SalesOrderDetail (SalesOrderID, SalesOrderDetailID, OrderQty, ProductID, UnitPrice, UnitPriceDiscount, LineTotal, rowguid, ModifiedDate)
+- SalesOrderHeader (SalesOrderID, RevisionNumber, OrderDate, DueDate, ShipDate, Status, OnlineOrderFlag, SalesOrderNumber, PurchaseOrderNumber, AccountNumber, CustomerID, ShipToAddressID, BillToAddressID, ShipMethod, CreditCardApprovalCode, SubTotal, TaxAmt, Freight, TotalDue, Comment, rowguid, ModifiedDate)
+ 
+Example:
+
+Summary: Retrieve all customers who have placed an order in the last 30 days.
+
+SQL Query:
+
+`SELECT DISTINCT c.CustomerID, c.FirstName, c.LastName, c.EmailAddress
+FROM Customer c
+JOIN SalesOrderHeader soh ON c.CustomerID = soh.CustomerID
+WHERE soh.OrderDate >= DATEADD(day, -30, GETDATE());`
+
+Feel free to use this prompt to generate SQL queries based on the SalesLT table schema.
