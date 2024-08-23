@@ -64,27 +64,27 @@ Here are the steps to set up the Azure SQL database:
 
 Creating SQL DB - Basic Settings:
 
-  ![CreateSQLDB](./SQLChatterImages/CreateSQLDB1.png)
+  ![CreateSQLDB](./OpenAIImages/CreateSQLDB1.png)
 
 Creating SQL Server:
 
-  ![CreateSQLServer](./SQLChatterImages/CreateSQLServer.png)
+  ![CreateSQLServer](./OpenAIImages/CreateSQLServer.png)
 
 * **Sample Data**: Under the "Additional settings" tab, select **"Use existing data"** and choose **"AdventureWorksLT"** as the sample data:
 
-  ![AdventureWorksLTSelect](./SQLChatterImages/AdventureWorksLTSelect.png)
+  ![AdventureWorksLTSelect](./OpenAIImages/AdventureWorksLTSelect.png)
 
 * **Networking**: 
 
   * Ensure to add your current client IP address to the server firewall rules to allow access.
   * You can do this by clicking on **"Public endpoint"** as "Connectivity method" and adding your current client IP address:
 
-  ![Networking](./SQLChatterImages/Networking.png)
+  ![Networking](./OpenAIImages/Networking.png)
 
 * **Review and Create**: 
   * Review all the settings and click on **"Create"** to deploy the SQL database:
 
- ![ReviewAndCreate](./SQLChatterImages/ReviewAndCreate.png)
+ ![ReviewAndCreate](./OpenAIImages/ReviewAndCreate.png)
 
 #### 2.2. Create OpenAI Service:
 
@@ -96,7 +96,7 @@ Creating SQL Server:
 * **Region**: Select **"East US 2"** region supports the GPT-4 model.
 * **Name**: Provide **"AIChatter"** name for your OpenAI service.
 
-![CreateOpenAI](./SQLChatterImages/CreateOpenAI.png)
+![CreateOpenAI](./OpenAIImages/CreateOpenAI.png)
 
 * Review all the settings and click on **"Create"** to deploy the OpenAI service.
 
@@ -112,7 +112,7 @@ Creating SQL Server:
   * Select **"Default"** as Content Filter.
   * Then Create the model:
 
-![DeployAIModel](./SQLChatterImages/DeployAIModel.png)
+![DeployAIModel](./OpenAIImages/DeployAIModel.png)
 
 ### 3. Configuration in Source Code:
 
@@ -183,7 +183,7 @@ Example Updated Configuration in **"appsettings.json"** file:
 
 * You can try the application with your natural language inputs. (e.g., "Retrieve the first 10 records from Address table" or "Retrieve all product categories"):
 
-![DBQuerySample](./SQLChatterImages/DBQuerySample.png)
+![DBQuerySample](./OpenAIImages/DBQuerySample.png)
 
 * Continue testing the app to ensure it can successfully query the database using natural language inputs and display the results correctly.
 
