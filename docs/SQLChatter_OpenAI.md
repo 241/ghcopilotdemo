@@ -62,11 +62,11 @@ Here are the steps to set up the Azure SQL database:
   * **Server**: Create a new server named **"aichatterserver"**. Select **"East US"** or any other location for Location step. For authentication, please select **"Use both SQL and Microsoft Entra authentication"** and provide server admin login and password. (Please note this admin user and password for the source code configuration later.)
   Select yourself as **"Microsoft Entra admin"** from the list then click **"OK"**:
 
-Creating SQL DB - Basic Settings:
+   Creating SQL DB - Basic Settings:
 
   ![CreateSQLDB](./SQLChatterImages/CreateSQLDB1.png)
 
-Creating SQL Server:
+   Creating SQL Server:
 
   ![CreateSQLServer](./SQLChatterImages/CreateSQLServer.png)
 

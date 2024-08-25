@@ -58,6 +58,25 @@ You can follow the step by step instructions to complete this excercise:
 * Or instead of providing a ready-made prompt, you can ask GitHub Copilot to create the prompt itself. 
 Here is an example:
 
+    ```
+    I would like you to create a prompt that asks to generate SQL queries using the schema of the SalesLT table below, and to provide the result as "Summary" and "SQL Query."
+
+    I'm providing the SalesLT table schema below:
+
+    - Address (AddressID, AddressLine1, AddressLine2, City, StateProvince, CountryRegion, PostalCode, rowguid, ModifiedDate)
+    - Customer (CustomerID, NameStyle, Title, FirstName, MiddleName, LastName, Suffix, CompanyName, SalesPerson, EmailAddress, Phone, PasswordHash, PasswordSalt, rowguid, ModifiedDate)
+    - CustomerAddress (CustomerID, AddressID, AddressType, rowguid, ModifiedDate)
+    - Product (ProductID, Name, ProductNumber, Color, StandardCost, ListPrice, Size, Weight, ProductCategoryID, ProductModelID, SellStartDate, SellEndDate, DiscontinuedDate, ThumbNailPhoto, ThumbnailPhotoFileName, rowguid, ModifiedDate)
+    - ProductCategory (ProductCategoryID, ParentProductCategoryID, Name, rowguid, ModifiedDate)
+    - ProductDescription (ProductDescriptionID, Description, rowguid, ModifiedDate)
+    - ProductModel (ProductModelID, Name, CatalogDescription, rowguid, ModifiedDate)
+    - ProductModelProductDescription (ProductModelID, ProductDescriptionID, Culture, rowguid, ModifiedDate)
+    - SalesOrderDetail (SalesOrderID, SalesOrderDetailID, OrderQty, ProductID, UnitPrice, UnitPriceDiscount, LineTotal, rowguid, ModifiedDate)
+    - SalesOrderHeader (SalesOrderID, RevisionNumber, OrderDate, DueDate, ShipDate, Status, OnlineOrderFlag, SalesOrderNumber, PurchaseOrderNumber, AccountNumber, CustomerID, ShipToAddressID, BillToAddressID, ShipMethod, CreditCardApprovalCode, SubTotal, TaxAmt, Freight, TotalDue, Comment, rowguid, ModifiedDate)
+ 
+    Can you create this prompt for me?
+    ```
+
   ![CreatePrompt](./CopilotImages/CreatePrompt.png)
 
    The answer from Copilot:
@@ -69,6 +88,15 @@ Here is an example:
   ![ExampleAnswersFromCopilot](./CopilotImages/ExampleAnswersFromCopilot.png)
 
 * GitHub Copilot has now processed all your input and is trained, ready to generate SQL queries based on the structure provided in your prompt. Feel free to ask questions in your native language or even non-SQL related questions:
+
+    **Questions:**
+    ```
+    How many customers do I have from Germany?
+    ```
+
+    ```
+    Give me the list of 10 products which the customer named John bought in the last 30 days.
+    ```
 
   ![MyQuestions](./CopilotImages/MyQuestions.png)
 
@@ -128,3 +156,53 @@ Here is an example:
   * If you use less detailed version of the prompt, the answers will change. (You can download this [prompt2.txt](https://github.com/241/ghcopilotdemo/blob/main/prompts/prompt2.txt) file and open from your Visual Studio Code.)
 
     ![BasitOlanPromptDosyasindanOrnek](./CopilotImages/BasitOlanPromptDosyasindanOrnek.png)
+
+### 2. Creating a Sample Database in Azure Portal:
+
+* The Azure Portal offers an option to use the **AdventureWorksLT** sample database with data. (AdventureWorksLT sample database includes all the tables we provide in the prompt, so we can directly use this). 
+
+   If you’re unsure how to create this database, you can simply ask Copilot and follow the steps it provides:
+
+    ```
+    I'd like to create the AdventureWorksLT sample database with data in the Azure portal using SQL authentication. How can I do that?
+    ```
+    
+    ![AdventureWorksLTSample](./CopilotImages/AdventureWorksLTSample.png)
+
+* Create a SQL Database which GitHub Copilot explained above in detail or follow these steps:
+  * Open your web browser and go to the [Azure Portal](https://ms.portal.azure.com/). 
+  * Sign in with your Azure account credentials.
+  * In the left-hand menu, click on **"Create a resource"**.
+  * Search for **"SQL Database"** and select it from the list.
+  * Click on **"Create"** to start the setup process.
+  * Configure Basic Settings
+    * **Subscription**: Select your Azure subscription.
+    * **Resource Group**: Create a new resource group named **"AIChatterResource"**.
+    * **Database Name**: Enter **"AIChatterDB"** for your database name.
+    * **Server**: Create a new server named **"aichatterserver"**. Select **"East US"** or any other location for Location step. For authentication, please select **"Use both SQL and Microsoft Entra authentication"** and provide server admin login and password. (Please note this admin user and password for the source code configuration later.)
+  Select yourself as **"Microsoft Entra admin"** from the list then click **"OK"**:
+
+    Creating SQL DB - Basic Settings:
+
+    ![CreateSQLDB](./SQLChatterImages/CreateSQLDB1.png)
+
+    Creating SQL Server:
+
+    ![CreateSQLServer](./SQLChatterImages/CreateSQLServer.png)
+
+   * **Sample Data**: Under the "Additional settings" tab, select **"Use existing data"** and choose **"AdventureWorksLT"** as the sample data:
+
+     ![AdventureWorksLTSelect](./SQLChatterImages/AdventureWorksLTSelect.png)
+
+   * **Networking**: 
+
+     * Ensure to add your current client IP address to the server firewall rules to allow access.
+     * You can do this by clicking on **"Public endpoint"** as "Connectivity method" and adding your current client IP address:
+
+     ![Networking](./SQLChatterImages/Networking.png)
+
+   * **Review and Create**: 
+       * Review all the settings and click on **"Create"** to deploy the SQL database:
+
+     ![ReviewAndCreate](./SQLChatterImages/ReviewAndCreate.png)
+
