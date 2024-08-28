@@ -30,9 +30,9 @@ You can follow the step by step instructions to complete this excercise:
 
 ### 1. Generating Prompt:
 
-* Create a prompt that instructs Copilot to generate SQL queries using the schema of the SalesLT table below:
+* Create a prompt that instructs Copilot to generate SQL queries using the schema of the SalesLT database below:
 
-   **SalesLT Table**:
+   **SalesLT Database**:
    ```
    - Address (AddressID, AddressLine1, AddressLine2, City, StateProvince, CountryRegion, PostalCode, rowguid, ModifiedDate)
    
@@ -59,9 +59,9 @@ You can follow the step by step instructions to complete this excercise:
 Here is an example:
 
     ```
-    I would like you to create a prompt that asks to generate SQL queries using the schema of the SalesLT table below, and to provide the result as "Summary" and "SQL Query."
+    I would like you to create a prompt that asks to generate SQL queries using the schema of the SalesLT database below, and to provide the result as "Summary" and "SQL Query."
 
-    I'm providing the SalesLT table schema below:
+    I'm providing the SalesLT database schema below:
 
     - Address (AddressID, AddressLine1, AddressLine2, City, StateProvince, CountryRegion, PostalCode, rowguid, ModifiedDate)
     - Customer (CustomerID, NameStyle, Title, FirstName, MiddleName, LastName, Suffix, CompanyName, SalesPerson, EmailAddress, Phone, PasswordHash, PasswordSalt, rowguid, ModifiedDate)
@@ -206,3 +206,12 @@ Here is an example:
 
      ![ReviewAndCreate](./SQLChatterImages/ReviewAndCreate.png)
 
+ * Now, you have a database with sample data that has the same schema structure as the SalesLT database you provided in the prompt.
+
+### 3. Coding the Frontend with Copilot:
+
+* Create a prompt that instructs Copilot to generate SQL queries using the schema of the SalesLT database below:
+
+I' d like to have a web page including a textbox for my inputs and near the textbox there should be a button to submit my question. This page will get my questions and give the answers in the bottom. For example I can ask "How are you?" and it will give me "I am fine". Please write me the code of this web page in Blazor. I will use VS Code for IDE.
+
+![Blazor](./CopilotImages/Blazor.png)
