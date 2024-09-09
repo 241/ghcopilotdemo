@@ -6,11 +6,11 @@ nav_order: 1
 
 # SQL Chatter Project (GitHub Copilot Version)
 
-//TODO: Aşağıdaki açıklama proje bitince yazılacak:
+This project demonstrates how to use GitHub Copilot to efficiently develop a .NET Core Web API backend and a Blazor Web App frontend for querying an Azure SQL Database. Copilot helps generate SQL queries and code, streamlining the development process.
 
-This project demonstrates how to use OpenAI to interact with a relational SQL database using natural language, eliminating the need for SQL queries by the end user. There is an app connected to an Azure SQL database and Azure OpenAI service, which converts natural language inputs into SQL queries. 
+We set up a microservices-based backend to handle SQL queries from the frontend, which allows users to input queries through the Blazor Web App. The Web API processes the queries and returns results in real-time.
 
-This study covers the setup of the database and OpenAI service, the architecture of the app, and the process of configuring the AI model to understand the database schema and generate accurate SQL queries.
+Using GitHub Copilot simplifies coding tasks, automates query generation, and enhances overall productivity, making complex projects easier to manage and execute.
 
 ## ✍️ Prerequisites
 
@@ -102,7 +102,7 @@ Here is an example:
 
 * You can directly use these SQL queries for your example database.
 
-* For a more detailed and professionally created prompt, you can also consider using the version below and you can ask questions and get the answers as SQL queries with this prompt also:
+* For a more detailed and professionally created prompt, you can also consider using the version below and you can ask questions and get the answers as SQL queries with this prompt also **(In this exercise, we used this prompt)**:
 
     ```
     You are a helpful, friendly, and knowledgeable assistant. 
@@ -208,10 +208,109 @@ Here is an example:
 
  * Now, you have a database with sample data that has the same schema structure as the SalesLT database you provided in the prompt.
 
-### 3. Coding the Frontend with Copilot:
+### 3. Coding the SQLChatter Project with Copilot:
 
-* Create a prompt that instructs Copilot to generate SQL queries using the schema of the SalesLT database below:
+We have a sample Azure SQL Database created in Step 2. We want to send queries to this DB using SQL statements and retrieve the responses. To do this, let’s code two separate projects: Backend and Frontend.
 
-I' d like to have a web page including a textbox for my inputs and near the textbox there should be a button to submit my question. This page will get my questions and give the answers in the bottom. For example I can ask "How are you?" and it will give me "I am fine". Please write me the code of this web page in Blazor. I will use VS Code for IDE.
+First, we need a query statement prepared to send to the DB. For this, we will train GitHub Copilot using a prompt as described in Step 1. In this example, we used [prompt.txt](https://github.com/241/ghcopilotdemo/blob/main/prompts/prompt.txt). 
 
-![Blazor](./CopilotImages/Blazor.png)
+We will ask the trained Copilot questions about tables in our native language and expect it to generate SQL statements in response. We will take this SQL statement and ask it through the Blazor Web App.
+
+The Blazor Web App project will be our frontend project and will send the SQL query entered by the user to the Web API backend project. In this frontend project, we will ask the user to write the SQL statement into a textbox and use a button to send this query to the Web API. The result of the query will be displayed in a table format in the lower section.
+
+The backend project will be a .NET Core Web API project, and we will design it as a microservices-based project. This API will send the SQL query received from the Blazor Web App directly to the Azure SQL Database and retrieve the response. The backend project should be able to run the query and get the response for all our tables without using any specific table models.
+
+To summarize, the project diagram will be like this:
+
+![ProjectDiagram](./SQLChatterImages/ProjectDiagram.png)
+
+#### 3.1. Coding .NET Core Web API Project (Backend):
+
+* Prepare a prompt by using the requirements in the before section (Step 3), and ask to GitHub Copilot. For example:
+
+    ```
+    Create a .NET Core Web API project. This project should be in a microservices architecture.
+
+    In this Web API, I want to be able to send a query to an existing Azure SQL Database and receive the response. In the project you create, do not use a specific table model, as the columns in my tables can have any data type, including null. Please code accordingly.
+    ```
+
+* GitHub Copilot will prepare a project with the source code. Try to follow all the steps and try to create and code the .NET Core Web API project.
+
+   ![Backend](./SQLChatterImages/Backend.png)
+
+* If you want to use a pre-built .NET Core Web API backend project, you can download it from here. //TODO: link verilecek
+  * In the **"appsettings.json"** file and find the "AzureSqlDatabase" object:
+
+      ![ConnectionString](./SQLChatterImages/ConnectionString.png)
+  
+  * Update above code in **"appsettings.json"** file with the following detailed information from Azure Portal:
+
+     * In the Azure Portal, go to the SQL Databases and find your created database named **"AIChatterDB "**.
+     * Under the "Connection strings" menu in the left, copy "ADO.NET (SQL authentication)" connection string and replace the "AzureSqlDatabase" value in **"appsettings.json"** file.
+
+  * You should install the required Nuget packages into your solution:
+
+     ```dotnet restore```
+
+  * You can run your Web API project and validate the service by testing its endpoints directly within the Swagger UI, which will automatically generate the API documentation and allow for real-time interaction with your API. For this, use these 2 commands:
+     
+     ```dotnet build```
+
+     ```dotnet run```
+
+      ![SwaggerWebapi](./SQLChatterImages/SwaggerWebapi.png)
+
+  * If you prefer to call your Web API using Postman, your endpoint url will be ```https://localhost:7029/SQLChatter/execute-query``` and you should use "POST" method: 
+
+      The header parameters are:
+
+      ![PostmanHeaders](./SQLChatterImages/PostmanHeaders.png) 
+
+      The body and the result:
+
+      ![PostmanResult](./SQLChatterImages/PostmanResult.png) 
+
+  * Now, your Web API is ready to run the SQL Queries which comes from frontend.
+
+#### 3.2. Coding Blazor Web App Project (Frontend):
+
+* Prepare a prompt by using the requirements in the before section (Step 3), and ask to GitHub Copilot. For example:
+
+    ```
+   Create a Blazor Web App project as the frontend that will send SQL queries entered by the user to a Web API backend project with the URL "https://localhost:7029/SQLChatter/execute-query". 
+   
+   In this frontend, include a textbox where the user can input a SQL statement and a button to send the query to the Web API. The response from the API should be displayed in a table format in the lower section of the page.
+    ```
+
+* GitHub Copilot will prepare a project with the source code. Try to follow all the steps and try to create and code the Blazor Web App project.
+
+   ![Frontend](./SQLChatterImages/Frontend.png)
+
+* If you want to use a pre-built Blazor Web App frontend project, you can download it from here. //TODO: link verilecek
+
+   * Change the Web API address "https://localhost:7029/SQLChatter/execute-query" with yours in **Index.razor** file.
+
+   * You should install the required Nuget packages into your solution:
+
+     ```dotnet restore```
+
+
+   * You can build & run your Web App project:
+     
+     ```dotnet build```
+
+     ```dotnet run```
+
+   * Now, your Web App is ready to send the SQL Queries to the Web API:
+
+      ![WebApp](./SQLChatterImages/WebApp.png)
+
+   * You can generate SQL queries using Copilot, then copy and paste them directly into the Blazor Web App. Once the query is submitted, execute it to retrieve and display the results returned from the Web API.
+
+## 💡 Hint
+While coding or running applications, you can send any issue or error you encounter to Copilot and ask for a solution. You can even have GitHub Copilot complete your entire project for you.
+
+## 🤝 Conclusion
+This exercise highlights the benefits of using GitHub Copilot for streamlining and simplifying the development process. By automating tasks like generating SQL queries and handling repetitive coding, Copilot allows you to focus on problem-solving and project goals.
+
+Through this approach, you gain efficiency, reduce errors, and accelerate the overall workflow. The exercise also demonstrates how Copilot can support you in learning and executing complex projects, even if you’re not an expert in coding, making development more accessible and manageable.
