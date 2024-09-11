@@ -236,6 +236,8 @@ To summarize, the project diagram will be like this:
 
 * GitHub Copilot will prepare a project with the source code. Try to follow all the steps and try to create and code the .NET Core Web API project.
 
+   _**Note:** Please remember that GitHub Copilot may provide different answers to each question you ask, so don't expect the same response every time. And please note that you can use GitHub Copilot for every problem you encounter while coding. You can even send runtime errors directly to GitHub Copilot and get a solution._
+
    ![Backend](./SQLChatterImages/Backend.png)
 
 * If you want to use a pre-built .NET Core Web API backend project, you can download it from here. //TODO: link verilecek
@@ -284,6 +286,8 @@ To summarize, the project diagram will be like this:
 
 * GitHub Copilot will prepare a project with the source code. Try to follow all the steps and try to create and code the Blazor Web App project.
 
+   _**Note:** Please remember that GitHub Copilot may provide different answers to each question you ask, so don't expect the same response every time. And please note that you can use GitHub Copilot for every problem you encounter while coding. You can even send runtime errors directly to GitHub Copilot and get a solution._
+   
    ![Frontend](./SQLChatterImages/Frontend.png)
 
 * If you want to use a pre-built Blazor Web App frontend project, you can download it from here. //TODO: link verilecek
