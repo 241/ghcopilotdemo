@@ -28,3 +28,15 @@ To do this exercise, you need GitHub Copilot and a supported IDE like VS Code. Y
 
 ## 🗒️ Guide
 You can follow the step by step instructions to complete this excercise.
+
+
+Please continue to next subject: [1. Generating Prompt](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot_01.html).
+
+
+## 💡 Hint
+While coding or running applications, you can send any issue or error you encounter to Copilot and ask for a solution. You can even have GitHub Copilot complete your entire project for you.
+
+## 🤝 Conclusion
+This exercise highlights the benefits of using GitHub Copilot for streamlining and simplifying the development process. By automating tasks like generating SQL queries and handling repetitive coding, Copilot allows you to focus on problem-solving and project goals.
+
+Through this approach, you gain efficiency, reduce errors, and accelerate the overall workflow. The exercise also demonstrates how Copilot can support you in learning and executing complex projects, even if you’re not an expert in coding, making development more accessible and manageable.
