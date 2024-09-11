@@ -1,9 +1,11 @@
 ---
 title: 3.2. Coding Blazor Web App Project (Frontend)
 layout: home
-nav_order: 5
-parent: 'SQL Chatter Project (GitHub Copilot Version)'
+nav_order: 2
+parent: '3. Coding the SQLChatter Project with Copilot'
+grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 ---
+
 
 #### 3.2. Coding Blazor Web App Project (Frontend):
 
