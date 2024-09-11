@@ -27,4 +27,4 @@ To do this exercise, you need GitHub Copilot and a supported IDE like VS Code. Y
 
 
 ## 🗒️ Guide
-You can follow the step by step instructions to complete this excercise. Please step into next subject: [1. Generating Prompt](https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot?tool=vscode).
+You can follow the step by step instructions to complete this excercise.
