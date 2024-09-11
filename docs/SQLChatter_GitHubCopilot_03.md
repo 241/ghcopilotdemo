@@ -3,7 +3,6 @@ title: 3. Coding the SQLChatter Project with Copilot
 layout: home
 nav_order: 3
 parent: 'SQL Chatter Project (GitHub Copilot Version)'
-has_children: true
 ---
 
 ### 3. Coding the SQLChatter Project with Copilot:
