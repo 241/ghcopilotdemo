@@ -1,9 +1,8 @@
 ---
 title: 3.1. Coding .NET Core Web API Project (Backend)
 layout: home
-nav_order: 3
+nav_order: 1
 parent: '3. Coding the SQLChatter Project with Copilot'
-has_children: true
 ---
 
 #### 3.1. Coding .NET Core Web API Project (Backend):
