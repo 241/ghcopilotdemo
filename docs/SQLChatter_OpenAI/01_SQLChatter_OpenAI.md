@@ -31,7 +31,7 @@ For IDE extensions,
 ## 🗒️ Guide
 You can follow the step by step instructions to complete this excercise:
 
-> Please continue to next step: [1. Clone the Repository](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot_01.html).
+> Please continue to next step: [1. Clone the Repository](https://241.github.io/ghcopilotdemo/SQLChatter_OpenAI/0101_CloneTheRepo.html).
 
 ## 💡 Hint
 You can ask questions to Github Copilot about the code snippets in the solution and you can change the source code.

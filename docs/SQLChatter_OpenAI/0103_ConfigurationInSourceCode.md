@@ -67,4 +67,4 @@ Example Updated Configuration in **"appsettings.json"** file:
 ```
 
 &nbsp;
-> Please continue to next step: [4. Running the Application](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot_01.html).
+> Please continue to next step: [4. Running the Application](https://241.github.io/ghcopilotdemo/SQLChatter_OpenAI/0104_RunningTheApp.html).

@@ -18,4 +18,4 @@ parent: 'SQL Chatter Project (Azure OpenAI Version)'
 * Or you can directly open **"OpenAIWebApp.sln"** solution file with Visual Studio 2022.
 
 &nbsp;
-> Please continue to next step: [2. Configuration in Azure Portal](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot_01.html).
+> Please continue to next step: [2. Configuration in Azure Portal](https://241.github.io/ghcopilotdemo/SQLChatter_OpenAI/0102_ConfigurationInAzurePortal.html).

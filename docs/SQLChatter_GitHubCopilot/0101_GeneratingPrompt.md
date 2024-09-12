@@ -135,4 +135,4 @@ Here is an example:
     ![BasitOlanPromptDosyasindanOrnek](./CopilotImages/BasitOlanPromptDosyasindanOrnek.png)
 
 &nbsp;
-> Please continue to next step: [2. Creating a Sample Database in Azure Portal](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot_01.html).
+> Please continue to next step: [2. Creating a Sample Database in Azure Portal](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot/0102_CreatingSampleDatabase.html).

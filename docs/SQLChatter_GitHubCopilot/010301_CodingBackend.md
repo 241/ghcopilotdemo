@@ -57,4 +57,4 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
   * Now, your Web API is ready to run the SQL Queries which comes from frontend.
 
 &nbsp;
-> Please continue to next step: [3.2. Coding Blazor Web App Project (Frontend))](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot_01.html).
+> Please continue to next step: [3.2. Coding Blazor Web App Project (Frontend))](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot/010302_CodingFrontend.html).

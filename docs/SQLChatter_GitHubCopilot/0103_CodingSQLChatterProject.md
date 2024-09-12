@@ -23,4 +23,4 @@ To summarize, the project diagram will be like this:
 ![ProjectDiagram](./CopilotImages/ProjectDiagram.png)
 
  &nbsp;
-> Please continue to next step: [3.1. Coding .NET Core Web API Project (Backend)](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot_01.html).
+> Please continue to next step: [3.1. Coding .NET Core Web API Project (Backend)](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot/010301_CodingBackend.html).

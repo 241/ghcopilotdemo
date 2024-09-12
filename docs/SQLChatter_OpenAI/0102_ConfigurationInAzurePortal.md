@@ -78,4 +78,4 @@ Here are the steps to set up the Azure SQL database:
 ![DeployAIModel](./OpenAIImages/DeployAIModel.png)
 
 &nbsp;
-> Please continue to next step: [3. Configuration in Source Code](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot_01.html).
+> Please continue to next step: [3. Configuration in Source Code](https://241.github.io/ghcopilotdemo/SQLChatter_OpenAI/0103_ConfigurationInSourceCode.html).
