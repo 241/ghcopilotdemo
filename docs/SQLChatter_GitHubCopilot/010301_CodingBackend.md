@@ -20,12 +20,12 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 
    _**Note:** Please remember that GitHub Copilot may provide different answers to each question you ask, so don't expect the same response every time. And please note that you can use GitHub Copilot for every problem you encounter while coding. You can even send runtime errors directly to GitHub Copilot and get a solution._
 
-   ![Backend](./SQLChatterImages/Backend.png)
+   ![Backend](./CopilotImages/Backend.png)
 
 * If you want to use a pre-built .NET Core Web API backend project, you can download it from here. //TODO: link verilecek
   * In the **"appsettings.json"** file and find the "AzureSqlDatabase" object:
 
-      ![ConnectionString](./SQLChatterImages/ConnectionString.png)
+      ![ConnectionString](./CopilotImages/ConnectionString.png)
   
   * Update above code in **"appsettings.json"** file with the following detailed information from Azure Portal:
 
@@ -42,16 +42,19 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 
      ```dotnet run```
 
-      ![SwaggerWebapi](./SQLChatterImages/SwaggerWebapi.png)
+      ![SwaggerWebapi](./CopilotImages/SwaggerWebapi.png)
 
   * If you prefer to call your Web API using Postman, your endpoint url will be ```https://localhost:7029/SQLChatter/execute-query``` and you should use "POST" method: 
 
       The header parameters are:
 
-      ![PostmanHeaders](./SQLChatterImages/PostmanHeaders.png) 
+      ![PostmanHeaders](./CopilotImages/PostmanHeaders.png) 
 
       The body and the result:
 
-      ![PostmanResult](./SQLChatterImages/PostmanResult.png) 
+      ![PostmanResult](./CopilotImages/PostmanResult.png) 
 
   * Now, your Web API is ready to run the SQL Queries which comes from frontend.
+
+&nbsp;
+> Please continue to next step: [3.2. Coding Blazor Web App Project (Frontend))](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot_01.html).

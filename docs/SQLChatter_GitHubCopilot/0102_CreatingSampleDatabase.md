@@ -32,26 +32,28 @@ parent: 'SQL Chatter Project (GitHub Copilot Version)'
 
     Creating SQL DB - Basic Settings:
 
-    ![CreateSQLDB](./SQLChatterImages/CreateSQLDB1.png)
+    ![CreateSQLDB](../SQLChatter_OpenAI/OpenAIImages/CreateSQLDB1.png)
 
     Creating SQL Server:
 
-    ![CreateSQLServer](./SQLChatterImages/CreateSQLServer.png)
+    ![CreateSQLServer](../SQLChatter_OpenAI/OpenAIImages/CreateSQLServer.png)
 
    * **Sample Data**: Under the "Additional settings" tab, select **"Use existing data"** and choose **"AdventureWorksLT"** as the sample data:
 
-     ![AdventureWorksLTSelect](./SQLChatterImages/AdventureWorksLTSelect.png)
+     ![AdventureWorksLTSelect](../SQLChatter_OpenAI/OpenAIImages/AdventureWorksLTSelect.png)
 
    * **Networking**: 
 
      * Ensure to add your current client IP address to the server firewall rules to allow access.
      * You can do this by clicking on **"Public endpoint"** as "Connectivity method" and adding your current client IP address:
 
-     ![Networking](./SQLChatterImages/Networking.png)
+     ![Networking](../SQLChatter_OpenAI/OpenAIImages/Networking.png)
 
    * **Review and Create**: 
        * Review all the settings and click on **"Create"** to deploy the SQL database:
 
-     ![ReviewAndCreate](./SQLChatterImages/ReviewAndCreate.png)
+     ![ReviewAndCreate](../SQLChatter_OpenAI/OpenAIImages/ReviewAndCreate.png)
 
  * Now, you have a database with sample data that has the same schema structure as the SalesLT database you provided in the prompt.
+ &nbsp;
+> Please continue to next step: [3. Coding the SQLChatter Project with Copilot](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot_01.html).

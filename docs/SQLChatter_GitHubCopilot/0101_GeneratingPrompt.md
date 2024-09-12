@@ -133,3 +133,6 @@ Here is an example:
   * If you use less detailed version of the prompt, the answers will change. (You can download this [prompt2.txt](https://github.com/241/ghcopilotdemo/blob/main/prompts/prompt2.txt) file and open from your Visual Studio Code.)
 
     ![BasitOlanPromptDosyasindanOrnek](./CopilotImages/BasitOlanPromptDosyasindanOrnek.png)
+
+&nbsp;
+> Please continue to next step: [2. Creating a Sample Database in Azure Portal](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot_01.html).
