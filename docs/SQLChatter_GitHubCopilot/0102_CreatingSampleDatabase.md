@@ -55,5 +55,6 @@ parent: 'SQL Chatter Project (GitHub Copilot Version)'
      ![ReviewAndCreate](../SQLChatter_OpenAI/OpenAIImages/ReviewAndCreate.png)
 
  * Now, you have a database with sample data that has the same schema structure as the SalesLT database you provided in the prompt.
+ 
  &nbsp;
 > Please continue to next step: [3. Coding the SQLChatter Project with Copilot](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot/0103_CodingSQLChatterProject.html).
