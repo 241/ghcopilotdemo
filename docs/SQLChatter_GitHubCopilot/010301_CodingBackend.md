@@ -6,7 +6,7 @@ parent: '3. Coding the SQLChatter Project with Copilot'
 grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 ---
 
-#### 3.1. Coding .NET Core Web API Project (Backend):
+### 3.1. Coding .NET Core Web API Project (Backend):
 
 * Prepare a prompt by using the requirements in the before section (Step 3), and ask to GitHub Copilot. For example:
 
