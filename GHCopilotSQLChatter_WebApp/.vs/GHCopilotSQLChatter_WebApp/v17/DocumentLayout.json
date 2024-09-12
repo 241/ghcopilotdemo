@@ -1,0 +1,167 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|c:\\users\\basbahcivanb\\onedrive - microsoft\\busra_ms\\my_studies\\ai\\busra\\ghcopilotsqlchatter_webapp\\ghcopilotsqlchatter_webapp\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|solutionrelative:ghcopilotsqlchatter_webapp\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|c:\\users\\basbahcivanb\\onedrive - microsoft\\busra_ms\\my_studies\\ai\\busra\\ghcopilotsqlchatter_webapp\\ghcopilotsqlchatter_webapp\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|solutionrelative:ghcopilotsqlchatter_webapp\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|c:\\users\\basbahcivanb\\onedrive - microsoft\\busra_ms\\my_studies\\ai\\busra\\ghcopilotsqlchatter_webapp\\ghcopilotsqlchatter_webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|solutionrelative:ghcopilotsqlchatter_webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|c:\\users\\basbahcivanb\\onedrive - microsoft\\busra_ms\\my_studies\\ai\\busra\\ghcopilotsqlchatter_webapp\\ghcopilotsqlchatter_webapp\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|solutionrelative:ghcopilotsqlchatter_webapp\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|c:\\users\\basbahcivanb\\onedrive - microsoft\\busra_ms\\my_studies\\ai\\busra\\ghcopilotsqlchatter_webapp\\ghcopilotsqlchatter_webapp\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|solutionrelative:ghcopilotsqlchatter_webapp\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|c:\\users\\basbahcivanb\\onedrive - microsoft\\busra_ms\\my_studies\\ai\\busra\\ghcopilotsqlchatter_webapp\\ghcopilotsqlchatter_webapp\\shared\\surveyprompt.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|solutionrelative:ghcopilotsqlchatter_webapp\\shared\\surveyprompt.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|c:\\users\\basbahcivanb\\onedrive - microsoft\\busra_ms\\my_studies\\ai\\busra\\ghcopilotsqlchatter_webapp\\ghcopilotsqlchatter_webapp\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|solutionrelative:ghcopilotsqlchatter_webapp\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|c:\\users\\basbahcivanb\\onedrive - microsoft\\busra_ms\\my_studies\\ai\\busra\\ghcopilotsqlchatter_webapp\\ghcopilotsqlchatter_webapp\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|solutionrelative:ghcopilotsqlchatter_webapp\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|c:\\users\\basbahcivanb\\onedrive - microsoft\\busra_ms\\my_studies\\ai\\busra\\ghcopilotsqlchatter_webapp\\ghcopilotsqlchatter_webapp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AB4C5F40-40CD-40D5-A4EB-C368565C5BFC}|GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp.csproj|solutionrelative:ghcopilotsqlchatter_webapp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\App.razor",
+              "RelativeDocumentMoniker": "GHCopilotSQLChatter_WebApp\\App.razor",
+              "ToolTip": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\App.razor",
+              "RelativeToolTip": "GHCopilotSQLChatter_WebApp\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T00:09:07.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\_Imports.razor",
+              "RelativeDocumentMoniker": "GHCopilotSQLChatter_WebApp\\_Imports.razor",
+              "ToolTip": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\_Imports.razor",
+              "RelativeToolTip": "GHCopilotSQLChatter_WebApp\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T00:09:05.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SurveyPrompt.razor",
+              "DocumentMoniker": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\Shared\\SurveyPrompt.razor",
+              "RelativeDocumentMoniker": "GHCopilotSQLChatter_WebApp\\Shared\\SurveyPrompt.razor",
+              "ToolTip": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\Shared\\SurveyPrompt.razor",
+              "RelativeToolTip": "GHCopilotSQLChatter_WebApp\\Shared\\SurveyPrompt.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T23:59:38.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "GHCopilotSQLChatter_WebApp\\Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "GHCopilotSQLChatter_WebApp\\Shared\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T00:09:00.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "GHCopilotSQLChatter_WebApp\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\Pages\\Index.razor",
+              "RelativeToolTip": "GHCopilotSQLChatter_WebApp\\Pages\\Index.razor",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAADwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T23:59:45.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "GHCopilotSQLChatter_WebApp\\Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "GHCopilotSQLChatter_WebApp\\Shared\\NavMenu.razor",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAA0AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T02:04:44.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "bootstrap.min.css.map",
+              "DocumentMoniker": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+              "RelativeDocumentMoniker": "GHCopilotSQLChatter_WebApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+              "ToolTip": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+              "RelativeToolTip": "GHCopilotSQLChatter_WebApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAFLwEA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-08T02:04:42.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "GHCopilotSQLChatter_WebApp\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\wwwroot\\index.html",
+              "RelativeToolTip": "GHCopilotSQLChatter_WebApp\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-08T02:04:18.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "GHCopilotSQLChatter_WebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\basbahcivanb\\OneDrive - Microsoft\\Busra_MS\\My_Studies\\AI\\busra\\GHCopilotSQLChatter_WebApp\\GHCopilotSQLChatter_WebApp\\Program.cs",
+              "RelativeToolTip": "GHCopilotSQLChatter_WebApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T02:02:53.485Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

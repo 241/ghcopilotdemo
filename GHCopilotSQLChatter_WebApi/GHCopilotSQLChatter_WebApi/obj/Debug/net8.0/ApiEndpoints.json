@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "GHCopilotSQLChatter_WebApi.Controllers.SQLChatterController",
+    "Method": "ExecuteQuery",
+    "RelativePath": "SQLChatter/execute-query",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyMicroservice.Repositories.SQLChatterRepository\u002BQueryResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

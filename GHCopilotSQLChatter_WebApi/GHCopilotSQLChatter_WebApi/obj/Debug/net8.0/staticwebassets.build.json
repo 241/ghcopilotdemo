@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "U6zK0Qxw+Qs4K7QtAR4MSvXo4TJ0w0jwdiowFFQ0Swc=",
+  "Source": "GHCopilotSQLChatter_WebApi",
+  "BasePath": "_content/GHCopilotSQLChatter_WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
