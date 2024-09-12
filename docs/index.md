@@ -1,9 +1,7 @@
 ---
-title: Blank Page
+title: Just the Docs Template
 layout: home
 nav_order: 3
 ---
 
-# Blank Page
-
-Blank Page
+Just the Docs Template
