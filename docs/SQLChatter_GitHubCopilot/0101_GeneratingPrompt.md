@@ -5,6 +5,8 @@ nav_order: 1
 parent: 'SQL Chatter Project (GitHub Copilot Version)'
 ---
 
+//TODO: her bir lab' a duration belirleyip yazalım
+
 ### 1. Generating Prompt:
 
 * Create a prompt that instructs Copilot to generate SQL queries using the schema of the SalesLT database below:
