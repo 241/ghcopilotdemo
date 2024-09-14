@@ -12,7 +12,7 @@ var connectionString = builder.Configuration.GetConnectionString("AzureSqlDataba
 builder.Services.AddSingleton(connectionString);
 
 // Register SQLChatterRepository
-builder.Services.AddScoped<MyMicroservice.Repositories.SQLChatterRepository>();
+builder.Services.AddScoped<GHCopilotSQLChatter_WebApi.Repositories.SQLChatterRepository>();
 
 builder.Services.AddCors(options =>
 {

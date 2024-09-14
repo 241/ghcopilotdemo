@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
-namespace MyMicroservice.Repositories
+namespace GHCopilotSQLChatter_WebApi.Repositories
 {
     public class SQLChatterRepository
     {
@@ -12,10 +12,12 @@ namespace MyMicroservice.Repositories
         {
             _connectionString = connectionString;
         }
+
         public class QueryResult
         {
             public List<string> Columns { get; set; }
             public List<string[]> Rows { get; set; }
+            public string ErrorMessage { get; set; } // Hata mesajı için yeni bir alan
         }
 
         public QueryResult ExecuteQuery(string query)
@@ -24,63 +26,75 @@ namespace MyMicroservice.Repositories
             var result = new QueryResult
             {
                 Columns = new List<string>(),
-                Rows = new List<string[]>()
+                Rows = new List<string[]>(),
+                ErrorMessage = null,
             };
 
-            using (var connection = new SqlConnection(_connectionString))
+            try
             {
-                connection.Open();
-                using (var command = new SqlCommand(query, connection))
+                using (var connection = new SqlConnection(_connectionString))
                 {
-                    using (var reader = command.ExecuteReader())
+                    connection.Open();
+                    using (var command = new SqlCommand(query, connection))
                     {
-                        for (int i = 0; i < reader.FieldCount; i++)
+                        using (var reader = command.ExecuteReader())
                         {
-                            result.Columns.Add(reader.GetName(i));
-                        }
-
-                        while (reader.Read())
-                        {
-                            var row = new string[reader.FieldCount];
                             for (int i = 0; i < reader.FieldCount; i++)
                             {
-                                if (reader.IsDBNull(i))
+                                result.Columns.Add(reader.GetName(i));
+                            }
+
+                            while (reader.Read())
+                            {
+                                var row = new string[reader.FieldCount];
+                                for (int i = 0; i < reader.FieldCount; i++)
                                 {
-                                    row[i] = null;
-                                }
-                                else
-                                {
-                                    var fieldType = reader.GetFieldType(i);
-                                    if (fieldType == typeof(string))
+                                    if (reader.IsDBNull(i))
                                     {
-                                        row[i] = reader.GetString(i);
-                                    }
-                                    else if (fieldType == typeof(int))
-                                    {
-                                        row[i] = reader.GetInt32(i).ToString();
-                                    }
-                                    else if (fieldType == typeof(bool))
-                                    {
-                                        row[i] = reader.GetBoolean(i).ToString();
-                                    }
-                                    else if (fieldType == typeof(DateTime))
-                                    {
-                                        row[i] = reader.GetDateTime(i).ToString("o");
-                                    }
-                                    else if (fieldType == typeof(Guid))
-                                    {
-                                        row[i] = reader.GetGuid(i).ToString();
+                                        row[i] = null;
                                     }
                                     else
                                     {
-                                        row[i] = reader.GetValue(i).ToString();
+                                        var fieldType = reader.GetFieldType(i);
+                                        if (fieldType == typeof(string))
+                                        {
+                                            row[i] = reader.GetString(i);
+                                        }
+                                        else if (fieldType == typeof(int))
+                                        {
+                                            row[i] = reader.GetInt32(i).ToString();
+                                        }
+                                        else if (fieldType == typeof(bool))
+                                        {
+                                            row[i] = reader.GetBoolean(i).ToString();
+                                        }
+                                        else if (fieldType == typeof(DateTime))
+                                        {
+                                            row[i] = reader.GetDateTime(i).ToString("o");
+                                        }
+                                        else if (fieldType == typeof(Guid))
+                                        {
+                                            row[i] = reader.GetGuid(i).ToString();
+                                        }
+                                        else
+                                        {
+                                            row[i] = reader.GetValue(i).ToString();
+                                        }
                                     }
                                 }
+                                result.Rows.Add(row);
                             }
-                            result.Rows.Add(row);
                         }
                     }
                 }
+            }
+            catch (SqlException ex)
+            {
+                result.ErrorMessage = $"SQL Error: {ex.Message}";
+            }
+            catch (Exception ex)
+            {
+                result.ErrorMessage = $"General Error: {ex.Message}";
             }
 
             return result;

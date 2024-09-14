@@ -11,6 +11,14 @@
     <i class="oi oi-media-play"></i> Run Query
 </button>
 
+@if (!string.IsNullOrEmpty(responseMessage))
+{
+    <div class="alert alert-info mt-3">
+        <strong>Response:</strong>
+        <pre>@responseMessage</pre>
+    </div>
+}
+
 @if (columns != null && rows != null)
 {
     <table class="table table-striped mt-3">
@@ -35,13 +43,6 @@
         </tbody>
     </table>
 }
-else if (!string.IsNullOrEmpty(responseMessage))
-{
-    <div class="alert alert-info mt-3">
-        <strong>Response:</strong>
-        <pre>@responseMessage</pre>
-    </div>
-}
 
 @code {
     private string sqlQuery = string.Empty;
@@ -60,7 +61,7 @@ else if (!string.IsNullOrEmpty(responseMessage))
                 // Creating the request:
                 var request = new HttpRequestMessage(HttpMethod.Post, "https://localhost:7029/SQLChatter/execute-query");
 
-                // We are sending the contect as JSON:
+                // We are sending the content as JSON:
                 request.Content = new StringContent($"\"{sqlQuery}\"", System.Text.Encoding.UTF8, "application/json");
 
                 // The Accept header is expected to be text/plain:
@@ -100,21 +101,21 @@ else if (!string.IsNullOrEmpty(responseMessage))
                         }
 
                         // If table cannot be created successfully, reset the table:
-                        responseMessage = string.Empty;
+                        responseMessage = "Query executed successfully.";
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
                         // If JSON format is different than expected:
                         columns = null;
                         rows = null;
-                        responseMessage = responseBody;
+                        responseMessage = $"Error parsing response: {ex.Message}";
                     }
                 }
                 else
                 {
                     columns = null;
                     rows = null;
-                    responseMessage = $"Error: {response.StatusCode}";
+                    responseMessage = $"Error: {response.StatusCode} - {await response.Content.ReadAsStringAsync()}";
                 }
             }
             catch (Exception ex)
@@ -128,5 +129,8 @@ else if (!string.IsNullOrEmpty(responseMessage))
         {
             responseMessage = "Query cannot be empty!";
         }
+
+        // Ensure the component re-renders to show the message
+        StateHasChanged();
     }
 }
