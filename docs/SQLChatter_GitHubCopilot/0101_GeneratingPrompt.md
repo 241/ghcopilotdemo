@@ -5,8 +5,6 @@ nav_order: 1
 parent: 'SQL Chatter Project (GitHub Copilot Version)'
 ---
 
-//TODO: her bir lab' a duration belirleyip yazalım
-
 ### 1. Generating Prompt:
 
 * Create a prompt that instructs Copilot to generate SQL queries using the schema of the SalesLT database below:
@@ -117,11 +115,11 @@ Here is an example:
     ```
 
 * Another option: You can easily use the prompt from a file and ask Copilot directly:
-  * Download this [prompt.txt](https://github.com/241/ghcopilotdemo/blob/main/prompts/prompt.txt) file and open from your Visual Studio Code.
+  * Download this [advanced_prompt.txt](https://github.com/241/ghcopilotdemo/blob/main/docs/Prompts/advanced_prompt.txt) file and open from your Visual Studio Code.
   * First chat with Copilot:
 
     ```
-    I need your help about SQL queries about my sample database, but I want to use the information in the #file:prompt.txt when answering. Which tables can I ask you about?
+    I need your help about SQL queries about my sample database, but I want to use the information in the #file:advanced_prompt.txt when answering. Which tables can I ask you about?
     ```
 
   * Then, ask your questions:
@@ -130,11 +128,11 @@ Here is an example:
     Give me the customers who has a green watch product and from Germany
     ```
 
-    ![PromptDosyasindanOrnek](./CopilotImages/promptDosyasindanOrnek.png)
+    ![ExampleFromAdvancedPrompt](./CopilotImages/ExampleFromAdvancedPrompt.png)
 
-  * If you use less detailed version of the prompt, the answers will change. (You can download this [prompt2.txt](https://github.com/241/ghcopilotdemo/blob/main/prompts/prompt2.txt) file and open from your Visual Studio Code.)
+  * If you use less detailed version of the prompt, the answers will change. (You can download this [simple_prompt.txt](https://github.com/241/ghcopilotdemo/blob/main/docs/Prompts/simple_prompt.txt) file and open from your Visual Studio Code.)
 
-    ![BasitOlanPromptDosyasindanOrnek](./CopilotImages/BasitOlanPromptDosyasindanOrnek.png)
+    ![ExampleFromSimplePrompt](./CopilotImages/ExampleFromSimplePrompt.png)
 
 &nbsp;
 > Please continue to next step: [2. Creating a Sample Database in Azure Portal](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot/0102_CreatingSampleDatabase.html).

@@ -22,7 +22,7 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
    
    ![Frontend](./CopilotImages/Frontend.png)
 
-* If you want to use a pre-built Blazor Web App frontend project, you can download it from here. //TODO: link verilecek
+* If you want to use a pre-built Blazor Web App frontend project, you can download it from [here](https://github.com/241/ghcopilotdemo/tree/main/OpenAISQLChatter_WebApp).
 
    * Change the Web API address "https://localhost:7029/SQLChatter/execute-query" with yours in **Index.razor** file.
 

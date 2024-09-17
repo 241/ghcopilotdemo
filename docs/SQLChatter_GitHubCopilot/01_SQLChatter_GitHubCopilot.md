@@ -29,8 +29,6 @@ To do this exercise, you need GitHub Copilot and a supported IDE like VS Code. Y
 ## 🗒️ Guide
 You can follow the step by step instructions to complete this excercise.
 
-//TODO: Buraya exercise' leri ve sürelerini içeren bir tablo olsa harika olur
-
 > Please continue to next step: [1. Generating Prompt](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot/0101_GeneratingPrompt.html).
 
 ## 💡 Hint
