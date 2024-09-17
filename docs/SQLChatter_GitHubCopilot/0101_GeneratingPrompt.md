@@ -130,9 +130,13 @@ Here is an example:
 
     ![ExampleFromAdvancedPrompt](./CopilotImages/ExampleFromAdvancedPrompt.png)
 
+    _[Click](https://github.com/241/ghcopilotdemo/blob/main/docs/SQLChatter_GitHubCopilot/CopilotImages/ExampleFromAdvancedPrompt.png) to view this image in a larger size._
+
   * If you use less detailed version of the prompt, the answers will change. (You can download this [simple_prompt.txt](https://github.com/241/ghcopilotdemo/blob/main/docs/Prompts/simple_prompt.txt) file and open from your Visual Studio Code.)
 
     ![ExampleFromSimplePrompt](./CopilotImages/ExampleFromSimplePrompt.png)
+
+    _[Click](https://github.com/241/ghcopilotdemo/blob/main/docs/SQLChatter_GitHubCopilot/CopilotImages/ExampleFromSimplePrompt.png) to view this image in a larger size._
 
 &nbsp;
 > Please continue to next step: [2. Creating a Sample Database in Azure Portal](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot/0102_CreatingSampleDatabase.html).
