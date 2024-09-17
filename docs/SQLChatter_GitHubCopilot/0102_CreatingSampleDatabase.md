@@ -5,7 +5,7 @@ nav_order: 2
 parent: 'SQL Chatter Project (GitHub Copilot Version)'
 ---
 
-### 2. Creating a Sample Database in Azure Portal:
+## 2. Creating a Sample Database in Azure Portal:
 
 * The Azure Portal offers an option to use the **AdventureWorksLT** sample database with data. (AdventureWorksLT sample database includes all the tables we provide in the prompt, so we can directly use this). 
 

@@ -5,7 +5,7 @@ nav_order: 4
 parent: 'SQL Chatter Project (Azure OpenAI Version)'
 ---
 
-### 4. Running the Application:
+## 4. Running the Application:
 
 * Run the application or press F5 button in Visual Studio 2022.
 

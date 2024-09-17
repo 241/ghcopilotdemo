@@ -5,7 +5,7 @@ nav_order: 1
 parent: 'SQL Chatter Project (GitHub Copilot Version)'
 ---
 
-### 1. Generating Prompt:
+## 1. Generating Prompt:
 
 * Create a prompt that instructs Copilot to generate SQL queries using the schema of the SalesLT database below:
 

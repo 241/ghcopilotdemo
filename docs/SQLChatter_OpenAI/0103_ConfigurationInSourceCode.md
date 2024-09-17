@@ -5,7 +5,7 @@ nav_order: 3
 parent: 'SQL Chatter Project (Azure OpenAI Version)'
 ---
 
-### 3. Configuration in Source Code:
+## 3. Configuration in Source Code:
 
 To configure your Azure OpenAI and SQL Database settings in your source code, follow these steps:
 

@@ -5,7 +5,7 @@ nav_order: 1
 parent: 'SQL Chatter Project (Azure OpenAI Version)'
 ---
 
-### 1. Clone the Repository:
+## 1. Clone the Repository:
 
 * Open your terminal and clone the repository using the following command:
 

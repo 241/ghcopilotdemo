@@ -6,7 +6,7 @@ parent: 'SQL Chatter Project (GitHub Copilot Version)'
 has_children: true
 ---
 
-### 3. Coding the SQLChatter Project with Copilot:
+## 3. Coding the SQLChatter Project with Copilot:
 
 We have a sample Azure SQL Database created in Step 2. We want to send queries to this DB using SQL statements and retrieve the responses. To do this, let’s code two separate projects: Backend and Frontend.
 

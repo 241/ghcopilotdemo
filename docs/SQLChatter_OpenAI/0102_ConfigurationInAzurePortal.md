@@ -5,13 +5,13 @@ nav_order: 2
 parent: 'SQL Chatter Project (Azure OpenAI Version)'
 ---
 
-### 2. Configuration in Azure Portal:
+## 2. Configuration in Azure Portal:
 
 This app is currently hooked up to an Azure SQL database and an Azure open AI service, but all of the concepts at could apply to any relational database like MySQL or PostgreSQL and any variation of the open AI service as long as it's using the GPT-4 model.
 
 Here are the steps to set up the Azure SQL database:
 
-#### 2.1. Create Azure SQL Database:
+### 2.1. Create Azure SQL Database:
 
 * Open your web browser and go to the [Azure Portal](https://ms.portal.azure.com/). 
 * Sign in with your Azure account credentials.
@@ -49,7 +49,7 @@ Here are the steps to set up the Azure SQL database:
 
  ![ReviewAndCreate](./OpenAIImages/ReviewAndCreate.png)
 
-#### 2.2. Create OpenAI Service:
+### 2.2. Create OpenAI Service:
 
 * In the Azure Portal, click on **"Create a resource"**.
 * Search for **"Azure OpenAI"** and select it.

@@ -6,7 +6,7 @@ parent: '3. Coding the SQLChatter Project with Copilot'
 grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 ---
 
-### 3.2. Coding Blazor Web App Project (Frontend):
+## 3.2. Coding Blazor Web App Project (Frontend):
 
 * Prepare a prompt by using the requirements in the before section (Step 3), and ask to GitHub Copilot. For example:
 
