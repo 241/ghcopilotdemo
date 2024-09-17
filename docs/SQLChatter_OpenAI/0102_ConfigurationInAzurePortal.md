@@ -77,5 +77,9 @@ Here are the steps to set up the Azure SQL database:
 
 ![DeployAIModel](./OpenAIImages/DeployAIModel.png)
 
+* You will see your deployed GPT-4 Model:
+
+![DeployedModel](./OpenAIImages/DeployedModel.png)
+
 &nbsp;
 > Please continue to next step: [3. Configuration in Source Code](https://241.github.io/ghcopilotdemo/SQLChatter_OpenAI/0103_ConfigurationInSourceCode.html).
