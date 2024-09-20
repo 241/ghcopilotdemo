@@ -77,7 +77,7 @@ Here is an example:
 
   ![MyQuestions](./CopilotImages/MyQuestions.png)
 
-* You can directly use these SQL queries for your example database.
+* You can directly use these SQL queries for your example database in the next steps.
 
 * For a more detailed and professionally created prompt, you can also consider using the version below and you can ask questions and get the answers as SQL queries with this prompt also **(In this exercise, we used this prompt)**:
 

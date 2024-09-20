@@ -31,7 +31,7 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
      ```dotnet restore```
 
 
-   * You can build & run your Web App project:
+   * You should build & run your Web App project with these 2 commands:
      
      ```dotnet build```
 
@@ -42,3 +42,6 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
       ![WebApp](./CopilotImages/WebApp.png)
 
    * You can generate SQL queries using Copilot, then copy and paste them directly into the Blazor Web App. Once the query is submitted, execute it to retrieve and display the results returned from the Web API.
+
+   &nbsp;
+> Please continue to: [Conclusion](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot/0104_Conclusion.html).
