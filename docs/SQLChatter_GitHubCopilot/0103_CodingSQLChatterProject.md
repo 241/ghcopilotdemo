@@ -10,7 +10,7 @@ has_children: true
 
 We have a sample Azure SQL Database created in Step 2. We want to send queries to this DB using SQL statements and retrieve the responses. To do this, let’s code two separate projects: Backend and Frontend.
 
-First, we need a query statement prepared to send to the DB. For this, we will train GitHub Copilot using a prompt as described in Step 1. In this example, we used [advanced_prompt.txt](https://github.com/241/ghcopilotdemo/blob/main/docs/Prompts/advanced_prompt.txt). 
+First, we need a query statement prepared to send to the DB. For this, we trained GitHub Copilot using a prompt as described in Step 1. In this example, mentioned before, we used [advanced_prompt.txt](https://github.com/241/ghcopilotdemo/blob/main/docs/Prompts/advanced_prompt.txt). 
 
 We will ask the trained Copilot questions about tables in our native language and expect it to generate SQL statements in response. We will take this SQL statement and ask it through the Blazor Web App.
 
