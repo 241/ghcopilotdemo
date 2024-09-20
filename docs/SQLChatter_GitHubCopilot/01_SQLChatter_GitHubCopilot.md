@@ -15,6 +15,8 @@ Using GitHub Copilot simplifies coding tasks, automates query generation, and en
 
 ## ✍️ Prerequisites
 
+❗Before beginning this exercise, it is essential to have an active Azure subscription.
+
 To do this exercise, you need GitHub Copilot and a supported IDE like VS Code. You can install these on your computer or use Codespaces instead.
 
 * For the development tool, ensure you have [Visual Studio Code](https://code.visualstudio.com/) installed.
