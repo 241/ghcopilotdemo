@@ -22,7 +22,15 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 
    ![Backend](./CopilotImages/Backend.png)
 
-* If you want to use a pre-built .NET Core Web API backend project, you can download it from [here](https://github.com/241/ghcopilotdemo/tree/main/GHCopilotSQLChatter_WebApi).
+* If you want to use a pre-built .NET Core Web API backend project:
+
+  * Open your terminal and clone the repository using the following command:
+
+    ```git clone https://github.com/241/ghcopilotdemo.git```
+
+  * Navigate to the project directory: ```cd ghcopilotdemo```
+
+  * You can open the source code with Visual Studio Code by this command: ```code GHCopilotSQLChatter_WebApi```
 
   * In the **"appsettings.json"** file and find the "AzureSqlDatabase" object:
 
