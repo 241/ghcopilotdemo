@@ -54,7 +54,9 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 
   * You can run your Web API project and validate the service by testing its endpoints directly within the Swagger UI, which will automatically generate the API documentation and allow for real-time interaction with your API. For this, follow these steps:
      
-      * Build your project: ```dotnet build```
+      * Build your project: 
+      
+        ```dotnet build```
       
       * Navigate to the directory where the "GHCopilotSQLChatter_WebApi.csproj" file is located to run the project:
 
