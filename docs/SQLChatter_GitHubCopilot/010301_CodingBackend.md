@@ -79,7 +79,7 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 
       ![PostmanResult](./CopilotImages/PostmanResult.png) 
 
-  * Now, your Web API is ready to run the SQL Queries which comes from frontend.
+  * Now, your Web API is ready to run the SQL Queries which comes from frontend. For this, please do not stop the running Web Api project.
 
 &nbsp;
 > Please continue to next step: [3.2. Coding Blazor Web App Project (Frontend)](https://241.github.io/ghcopilotdemo/SQLChatter_GitHubCopilot/010302_CodingFrontend.html).
