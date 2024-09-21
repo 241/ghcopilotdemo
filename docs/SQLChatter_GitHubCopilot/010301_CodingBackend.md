@@ -46,6 +46,8 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
      
      * Under the "Connection strings" menu in the left, copy "ADO.NET (SQL authentication)" connection string and replace the "AzureSqlDatabase" value in **"appsettings.json"** file. Please update the masked password with your admin password which you created before in "Step 2. Creating a Sample Database in Azure Portal".
 
+  * Open "Terminal" in Visual Studio Code window. 
+  
   * You should install the required Nuget packages into your solution:
 
      ```dotnet restore```
@@ -58,11 +60,11 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 
         ```cd GHCopilotSQLChatter_WebApi```
 
-      * Then run the project:
+      * Then run the project from "https" address:
 
-        ```dotnet run```
+        ```dotnet run --launch-profile https```
 
-      * When the project is running, you will see a message in the terminal indicating the URL where the application is operating. This will typically be a URL like https://localhost:5000 or https://localhost:5001. (In this excercise our port is 7029).
+      * When the project is running, you will see a message in the terminal indicating the URL where the application is operating. This will typically be a URL like https://localhost:7029. (In this excercise our port is 7029).
 
       * Open your browser and visit the following URL: ```https://localhost:7029/swagger```.
       (If your application is running on a different port, replace 7029 with the corresponding port number.)

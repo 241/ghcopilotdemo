@@ -36,6 +36,8 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 
    * Navigate to the **ghcopilotdemo\GHCopilotSQLChatter_WebApp\GHCopilotSQLChatter_WebApp\Pages\Index.razor** file and change the Web API address "https://localhost:7029/SQLChatter/execute-query" with yours in **Index.razor** file.
 
+   * Open "Terminal" in Visual Studio Code window. 
+  
    * You should install the required Nuget packages into your solution:
 
      ```dotnet restore```
@@ -45,9 +47,10 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
    * Navigate to the directory where the "GHCopilotSQLChatter_WebApi.csproj" file is located to run the project:
 
      ```cd GHCopilotSQLChatter_WebApp```
-   * Then run the project:
 
-     ```dotnet run```
+   * Then run the project from "https" address:
+
+     ```dotnet run --launch-profile https```
 
    * When the project is running, you will see a message in the terminal indicating the URL where the application is operating. This will typically be a URL like https://localhost:5000 or https://localhost:5001. (In this excercise our port is 7201).
 
