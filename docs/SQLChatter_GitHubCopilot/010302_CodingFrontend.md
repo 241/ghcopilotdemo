@@ -22,23 +22,45 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
    
    ![Frontend](./CopilotImages/Frontend.png)
 
-* If you want to use a pre-built Blazor Web App frontend project, you can download it from [here](https://github.com/241/ghcopilotdemo/tree/main/OpenAISQLChatter_WebApp).
+* If you want to use a pre-built Blazor Web App frontend project:
 
-   * Change the Web API address "https://localhost:7029/SQLChatter/execute-query" with yours in **Index.razor** file.
+  * Open your terminal and clone the repository using the following command (If you already cloned the repo in "Step 3.1. Coding .NET Core Web API Project", skip this):
+
+    ```git clone https://github.com/241/ghcopilotdemo.git```
+
+  * Navigate to the project directory: ```cd ghcopilotdemo```
+
+  * You can open the source code with Visual Studio Code by this command: 
+  
+    ```code GHCopilotSQLChatter_WebApp```
+
+   * Navigate to the **ghcopilotdemo\GHCopilotSQLChatter_WebApp\GHCopilotSQLChatter_WebApp\Pages\Index.razor** file and change the Web API address "https://localhost:7029/SQLChatter/execute-query" with yours in **Index.razor** file.
 
    * You should install the required Nuget packages into your solution:
 
      ```dotnet restore```
 
+   * Build your project: ```dotnet build```
+      
+   * Navigate to the directory where the "GHCopilotSQLChatter_WebApi.csproj" file is located to run the project:
 
-   * You should build & run your Web App project with these 2 commands:
-     
-     ```dotnet build```
+     ```cd GHCopilotSQLChatter_WebApp```
+   * Then run the project:
 
      ```dotnet run```
 
-   * Now, your Web App is ready to send the SQL Queries to the Web API:
+   * When the project is running, you will see a message in the terminal indicating the URL where the application is operating. This will typically be a URL like http://localhost:5000 or http://localhost:5001. (In this excercise our port is 7201).
 
+   * Open your browser and visit the following URL: ```http://localhost:7201```.
+      (If your application is running on a different port, replace 7201 with the corresponding port number.)
+
+   * In the end your Web App is ready to send the SQL Queries to the Web API.
+      
+   * You can try it out with this sample query: 
+   
+      ```SELECT * FROM SalesLT.Customer c JOIN SalesLT.CustomerAddress ca ON c.CustomerID = ca.CustomerID JOIN SalesLT.Address a ON ca.AddressID = a.AddressID WHERE a.CountryRegion = 'Canada';```
+
+      &nbsp;
       ![WebApp](./CopilotImages/WebApp.png)
 
    * You can generate SQL queries using Copilot, then copy and paste them directly into the Blazor Web App. Once the query is submitted, execute it to retrieve and display the results returned from the Web API.

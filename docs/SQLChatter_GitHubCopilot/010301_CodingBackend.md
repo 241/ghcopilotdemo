@@ -34,7 +34,7 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
   
     ```code GHCopilotSQLChatter_WebApi```
 
-  * In the **"appsettings.json"** file and find the "AzureSqlDatabase" object:
+  * In the **"ghcopilotdemo\GHCopilotSQLChatter_WebApi\GHCopilotSQLChatter_WebApi\appsettings.json"** file, find the "AzureSqlDatabase" object:
 
       ![ConnectionString](./CopilotImages/ConnectionString.png)
 
