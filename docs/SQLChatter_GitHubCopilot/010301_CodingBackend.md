@@ -30,7 +30,9 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 
   * Navigate to the project directory: ```cd ghcopilotdemo```
 
-  * You can open the source code with Visual Studio Code by this command: ```code GHCopilotSQLChatter_WebApi```
+  * You can open the source code with Visual Studio Code by this command: 
+  
+    ```code GHCopilotSQLChatter_WebApi```
 
   * In the **"appsettings.json"** file and find the "AzureSqlDatabase" object:
 
