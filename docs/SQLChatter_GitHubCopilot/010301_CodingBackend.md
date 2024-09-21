@@ -62,9 +62,9 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 
         ```dotnet run```
 
-      * When the project is running, you will see a message in the terminal indicating the URL where the application is operating. This will typically be a URL like http://localhost:5000 or http://localhost:5001. (In this excercise our port is 7029).
+      * When the project is running, you will see a message in the terminal indicating the URL where the application is operating. This will typically be a URL like https://localhost:5000 or https://localhost:5001. (In this excercise our port is 7029).
 
-      * Open your browser and visit the following URL: ```http://localhost:7029/swagger```.
+      * Open your browser and visit the following URL: ```https://localhost:7029/swagger```.
       (If your application is running on a different port, replace 7029 with the corresponding port number.)
 
       * In the end you will see the Swagger UI to test your endpoint.
