@@ -39,7 +39,8 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
   * Update above code in **"appsettings.json"** file with the following detailed information from Azure Portal:
 
      * In the Azure Portal, go to the SQL Databases and find your created database named **"AIChatterDB "**.
-     * Under the "Connection strings" menu in the left, copy "ADO.NET (SQL authentication)" connection string and replace the "AzureSqlDatabase" value in **"appsettings.json"** file.
+     
+     * Under the "Connection strings" menu in the left, copy "ADO.NET (SQL authentication)" connection string and replace the "AzureSqlDatabase" value in **"appsettings.json"** file. Please update the masked password with your admin password which you created before in "Step 2. Creating a Sample Database in Azure Portal".
 
   * You should install the required Nuget packages into your solution:
 
@@ -62,7 +63,9 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
       * Open your browser and visit the following URL: ```http://localhost:7029/swagger```.
       (If your application is running on a different port, replace 7029 with the corresponding port number.)
 
-      * In the end you will see the Swagger UI to test your endpoint:
+      * In the end you will see the Swagger UI to test your endpoint.
+      
+      * You can try it out with this sample query: ```"SELECT TOP 5 * FROM [SalesLT].[Customer]"```
 
         ![SwaggerWebapi](./CopilotImages/SwaggerWebapi.png)
 

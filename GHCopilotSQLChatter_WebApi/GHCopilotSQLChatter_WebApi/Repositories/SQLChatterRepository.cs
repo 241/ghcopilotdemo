@@ -17,7 +17,7 @@ namespace GHCopilotSQLChatter_WebApi.Repositories
         {
             public List<string> Columns { get; set; }
             public List<string[]> Rows { get; set; }
-            public string ErrorMessage { get; set; } // Hata mesajı için yeni bir alan
+            public string ErrorMessage { get; set; }
         }
 
         public QueryResult ExecuteQuery(string query)
