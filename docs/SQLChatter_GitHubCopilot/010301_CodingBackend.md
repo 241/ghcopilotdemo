@@ -45,15 +45,28 @@ grand_parent: 'SQL Chatter Project (GitHub Copilot Version)'
 
      ```dotnet restore```
 
-  * You can run your Web API project and validate the service by testing its endpoints directly within the Swagger UI, which will automatically generate the API documentation and allow for real-time interaction with your API. For this, use these 2 commands:
+  * You can run your Web API project and validate the service by testing its endpoints directly within the Swagger UI, which will automatically generate the API documentation and allow for real-time interaction with your API. For this, follow these steps:
      
-     ```dotnet build```
+      * Build you project: ```dotnet build```
+      
+      * Navigate to the directory where the "GHCopilotSQLChatter_WebApi.csproj" file is located to run the project:
 
-     ```dotnet run```
+        ```cd GHCopilotSQLChatter_WebApi```
 
-      ![SwaggerWebapi](./CopilotImages/SwaggerWebapi.png)
+      * Then run the project:
 
-  * If you prefer to call your Web API using Postman, your endpoint url will be ```https://localhost:7029/SQLChatter/execute-query``` and you should use "POST" method: 
+        ```dotnet run```
+
+      * When the project is running, you will see a message in the terminal indicating the URL where the application is operating. This will typically be a URL like http://localhost:5000 or http://localhost:5001. (In this excercise our port is 7029).
+
+      * Open your browser and visit the following URL: ```http://localhost:7029/swagger```.
+      (If your application is running on a different port, replace 7029 with the corresponding port number.)
+
+      * In the end you will see the Swagger UI to test your endpoint:
+
+        ![SwaggerWebapi](./CopilotImages/SwaggerWebapi.png)
+
+  * If you prefer to call your Web API using Postman, your endpoint url will be like ```https://localhost:7029/SQLChatter/execute-query``` and you should use "POST" method: 
 
       The header parameters are:
 
